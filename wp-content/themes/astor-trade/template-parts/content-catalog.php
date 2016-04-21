@@ -57,8 +57,12 @@ if ($current_cat==0) : $current_cat=$categories[0]->term_id; endif;
 
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 						<ul class="nav navbar-nav sub-nav">
-						<?php  foreach($categories as $value) : ?>
-							<li <?php if ($current_cat==$value->term_id): echo 'class="active"'; endif; ?> ><a href="/catalog/<?=$value->term_id;?>"><?=$value->name?></a></li>
+
+							<?php  $menu=wp_get_nav_menu_items('catalog');   foreach($menu as $key=>$value): ?>
+							<li <?php if ($current_cat==$value->object_id): echo 'class="active"'; endif; ?> ><a href="/catalog/<?=$value->object_id?>">
+							<img src="<?=get_the_post_thumbnail_url($value->ID)?>" class="sub-menu-image" alt="камень">
+							<br>
+									<?=$value->title?></a></li>
 							<?php endforeach; ?>
 						</ul>
 					</div>

@@ -11,6 +11,10 @@ body{
 .logo{
 }
 
+.sub-menu-image{
+    width: 38px;
+}
+
 .telephone{
     padding-top: 30px;
     text-align: center;
@@ -184,6 +188,8 @@ button.navbar-toggle{
     -webkit-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
     -ms-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
 }
+
+
 
 .breadcrumb a{
     color: #000;
