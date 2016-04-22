@@ -8,19 +8,20 @@
 			</div>
 			<?php }else {  ?>
 
-			<form class="col-md-8 form-contacts">
+			<form class="col-md-8 form-contacts blink-mailer">
+				<input style="display: none" type="text" name="title" value="ОБРАТНАЯ СВЯЗЬ">
 				<div class="row text-contact-form">
 					<div class="col-md-12">СВЯЖИТЕСЬ С НАМИ!</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<input type="text" class="text-field" value="Ф.И.О">
-						<input type="text" class="text-field right-field" value="телефон">
+						<input type="text" class="text-field" name="Ф.И.О" placeholder="Ф.И.О">
+						<input type="text" class="text-field right-field" name="телефон" placeholder="телефон">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<textarea placeholder="СООБЩЕНИЕ"></textarea>
+						<textarea name="СООБЩЕНИЕ" placeholder="СООБЩЕНИЕ"></textarea>
 					</div>
 				</div>
 				<div class="row">
@@ -65,6 +66,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/carousel/owl.carousel.min.js"></script>
+<script src="https://callback.blink.kz/resources/callback/js/mailer.js"></script>
+<script>
+	var submitSMG = new BMModule();
+	submitSMG.submitForm(function(success) { $('.blink-mailer input[name=title]').val('ОБРАТНАЯ СВЯЗЬ'); }, function(error) {});
+
+
+</script>
 <script>
 	$(document).ready(function(){
 		$(".owl-carousel").owlCarousel({
