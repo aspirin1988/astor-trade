@@ -1,11 +1,24 @@
 body{
-    overflow-x:hidden;
+    overflow-x:hidden !important;
+	width: 100% !important;
 }
 
 /** ГЛАВНАЯ СТРАНИЦА **/
 
 .background-img{
     background-image: url(../img/bg.png);
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background: inherit !important;
+}
+.navbar-default .navbar-nav>.active>{
+	background: white !important;
 }
 
 .logo{
@@ -17,7 +30,7 @@ body{
 
 .telephone{
     padding-top: 30px;
-    text-align: center;
+        text-align: right;
 }
 
 .telephone-number{
@@ -105,7 +118,6 @@ button.navbar-toggle{
     left: 140px;
     height: 250px;
     font-family: "HelveticaNeueCyr";
-    text-shadow: 1px 1px 1px black;
     width: 386px;
     font-size: 30px;
     color: rgb(84, 84, 84);
@@ -168,7 +180,8 @@ button.navbar-toggle{
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-top: 0 !important;
-    min-height: 454px;
+     min-height: 465px;
+
 }
 
 .img_recom{
@@ -184,6 +197,7 @@ button.navbar-toggle{
     font-family: "HelveticaNeueCyr";
     color: rgb(0, 0, 0);
     line-height: 1.2;
+	float: right;
     -moz-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
     -webkit-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
     -ms-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
@@ -212,6 +226,7 @@ button.navbar-toggle{
     padding-right: 10px;
     font-size: 18px;
     overflow: hidden;
+	float: right;
     text-overflow: ellipsis;
     font-family: "HelveticaNeueCyr";
     color: rgb(224, 129, 26);
@@ -341,7 +356,6 @@ footer{
     font-size: 20px;
     font-family: "HelveticaNeueCyr";
     color: rgb(255, 255, 255);
-    margin-top: 275px;
 }
 
 /* СТРАНИЦА КОНТАКТЫ */
@@ -618,6 +632,7 @@ p.center-text-result{
         left: 0;
         background: rgba(0,0,0,0.3);
         color:white;
+    font-size: 22px;
     }
     .author{
         margin-top: 0;
@@ -633,10 +648,13 @@ p.center-text-result{
         display: none;
     }
     .link-rec{
-        font-size: 11px;
+            font-size: 8px;
     }
     .head-rec{
-        font-size: 14px;
+       font-size: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: pre-line;
     }
     .sub-nav li, .sub-nav{
         display: block !important;
@@ -645,11 +663,12 @@ p.center-text-result{
         padding-top: 8%;
     }
     .recomendation-block{
-        min-height: 100px;
+           min-height: 100px;
+   				 height: 315px;
     }
 
     .img-recom-slider{
-        min-height: 250px;
+            min-height: 184px !important;
     }
 
 }
