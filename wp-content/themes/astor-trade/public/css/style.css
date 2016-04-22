@@ -30,16 +30,20 @@ body{
 
 .telephone{
     padding-top: 30px;
-        text-align: right;
+    text-align: right;
 }
 
 .telephone-number{
-    font-size: 23px;
+    font-size: 18px;
     font-family: "HelveticaNeueCyr";
     color: rgb(88, 82, 82);
     line-height: 1.2;
     text-align: center;
     padding-top: 30px;
+}
+
+.nav.navbar-nav.sub-nav>li.active,.nav.navbar-nav.main-menu>li.active{
+background: white !important;
 }
 
 .telephone-number a {
@@ -203,6 +207,98 @@ button.navbar-toggle{
     -ms-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
 }
 
+.form-contacts input[type="text"].text-field{
+    background: black !important;
+    color:white;
+    padding-left: 10px !important;
+    font-family: "HelveticaNeueCyr";
+    font-size: 20px;
+    border: 2px solid white !important;
+    border-radius: 2px;
+    margin-right: 10px !important;
+    margin-top: 10px ;
+    margin-left: 0 !important;
+}
+
+.form-contacts input[type="submit"]{
+    background: black !important;
+    color:white;
+    padding-left: 10px !important;
+    font-family: "HelveticaNeueCyr";
+    font-size: 12px;
+    border: 2px solid white !important;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.text-contact-form{
+    font-size: 20px;
+    color: white !important;
+    margin-top: 42px;
+    font-size: 20px;
+    font-family: "HelveticaNeueCyr";
+    line-height: 1.2;
+}
+.form-contacts textarea{
+    width: 50%;
+    border: 2px solid white !important;
+    height: 130px;
+    margin-top: 10px;
+    background: black !important;
+    color:white !important;
+    font-family: "HelveticaNeueCyr" !important;
+    font-size: 15px !important;
+    resize: none;
+}
+.form-contacts textarea::-webkit-input-placeholder { color: black; }
+
+.form-contacts input[type="text"].text-field{
+    background: black !important;
+    color:white;
+    padding-left: 10px !important;
+    font-family: "HelveticaNeueCyr";
+    font-size: 20px;
+    border: 2px solid white !important;
+    border-radius: 2px;
+    margin-right: 10px !important;
+    margin-top: 10px ;
+    margin-left: 0 !important;
+    width: 30%;
+}
+
+.form-contacts input[type="submit"]{
+    background: black !important;
+    color:white;
+    padding-left: 10px !important;
+    font-family: "HelveticaNeueCyr";
+    font-size: 12px;
+    border: 2px solid white !important;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.text-contact-form{
+    font-size: 20px;
+    color: white !important;
+    margin-top: 42px;
+    font-size: 20px;
+    font-family: "HelveticaNeueCyr";
+    line-height: 1.2;
+}
+.form-contacts textarea{
+    border: 2px solid white !important;
+    height: 130px;
+    margin-top: 10px;
+    width: 62%;
+    background: black !important;
+    color:white !important;
+    font-family: "HelveticaNeueCyr" !important;
+    font-size: 15px !important;
+    resize: none;
+}
+.form-contacts textarea::-webkit-input-placeholder { color: black; }
 
 
 .breadcrumb a{
@@ -552,6 +648,8 @@ input[type="button"]{
     line-height: 1.2;
 }
 
+
+
 .buttons{
     text-align: center;
 }
@@ -641,6 +739,10 @@ p.center-text-result{
         width: 100%;
         height: 100%;
     }
+	.telephone{
+   		 padding-top: 30px;
+    	text-align: center;
+	}
     .text-rec{
         padding-left: 0;
         padding-right: 0;

@@ -2,9 +2,32 @@
 <footer>
 	<div class="container">
 		<div class="row">
+			<?php $current_post=$GLOBALS['current_post']; $cur_t=get_the_title($current_post->ID); if ($cur_t!='Контакты'){ ?>
 			<div class="col-md-4 map">
 				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kF7YbUMeNb7RlfYJauR2PCjSSINhWzy3&width=320&height=320&lang=ru_RU&sourceType=constructor"></script>
 			</div>
+			<?php }else {  ?>
+
+			<form class="col-md-8 form-contacts">
+				<div class="row text-contact-form">
+					<div class="col-md-12">СВЯЖИТЕСЬ С НАМИ!</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" class="text-field" value="Ф.И.О">
+						<input type="text" class="text-field right-field" value="телефон">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<textarea placeholder="СООБЩЕНИЕ"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12"><input type="submit" class="text-field" value="ОТПРАВИТЬ"></div>
+				</div>
+			</form>
+			<?php }; ?>
 			<div class="col-md-4">
 				<div class="contact">
 					Наши контакты:
