@@ -25,7 +25,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12"><input type="submit" class="text-field" value="ОТПРАВИТЬ"></div>
+						<div class="col-md-12"><input id="submit" type="submit" class="text-field" value="ОТПРАВИТЬ"></div>
 					</div>
 				</form>
 			<?php }; ?>
@@ -68,8 +68,6 @@
 <script>
 	var submitSMG = new BMModule();
 	submitSMG.submitForm(function(success) { $('.blink-mailer input[name=title]').val('ОБРАТНАЯ СВЯЗЬ'); console.log(success); }, function(error) {});
-
-
 </script>
 <script>
 	$(document).ready(function(){
