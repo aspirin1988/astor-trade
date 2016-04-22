@@ -15,8 +15,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<input type="text" class="text-field" name="Ф.И.О" placeholder="Ф.И.О">
-							<input type="text" class="text-field right-field" name="телефон" placeholder="Телефон">
+							<input type="text" class="text-field" name="Ф.И.О" placeholder="Ф.И.О" required>
+							<input type="text" class="text-field right-field" name="телефон" placeholder="Телефон" required>
 						</div>
 					</div>
 					<div class="row">
