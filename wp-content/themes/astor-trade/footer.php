@@ -195,8 +195,8 @@
 	}
 
 </script>
+<script  src="<?php bloginfo('template_directory') ?>/js/app.js"></script>
 <?php the_field('google',8)?>
 <?php the_field('yandex',8)?>
-<script  src="<?php bloginfo('template_directory') ?>/js/app.js"></script>
 </body>
 </html>
