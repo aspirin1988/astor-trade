@@ -1,6 +1,6 @@
 body{
     overflow-x:hidden !important;
-	width: 100% !important;
+    width: 100% !important;
 }
 
 /** ГЛАВНАЯ СТРАНИЦА **/
@@ -9,16 +9,16 @@ body{
     background-image: url(../img/bg.png);
     padding-right: 0 !important;
     padding-left: 0 !important;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	background: inherit !important;
+    background: inherit !important;
 }
 .navbar-default .navbar-nav>.active>{
-	background: white !important;
+    background: white !important;
 }
 
 .logo{
@@ -43,7 +43,7 @@ body{
 }
 
 .nav.navbar-nav.sub-nav>li.active,.nav.navbar-nav.main-menu>li.active{
-background: white !important;
+    background: white !important;
 }
 
 .telephone-number a {
@@ -184,8 +184,8 @@ button.navbar-toggle{
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-top: 0 !important;
-     min-height: 465px;
-
+    min-height: 465px;
+    position: relative;
 }
 
 .img_recom{
@@ -201,7 +201,6 @@ button.navbar-toggle{
     font-family: "HelveticaNeueCyr";
     color: rgb(0, 0, 0);
     line-height: 1.2;
-	float: right;
     -moz-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
     -webkit-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
     -ms-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
@@ -230,6 +229,8 @@ button.navbar-toggle{
     border-radius: 2px;
     margin-top: 20px;
     font-weight: bold;
+    width: 110px;
+    height: 35px;
 }
 
 .text-contact-form{
@@ -322,7 +323,7 @@ button.navbar-toggle{
     padding-right: 10px;
     font-size: 18px;
     overflow: hidden;
-	float: right;
+    float: right;
     text-overflow: ellipsis;
     font-family: "HelveticaNeueCyr";
     color: rgb(224, 129, 26);
@@ -333,13 +334,16 @@ button.navbar-toggle{
     -ms-transform: matrix( 1.12150837988827,0,0,1.12107623318386,0,0);
 }
 .link-rec{
-    text-align: center;
     font-size: 18px;
     font-family: "HelveticaNeueCyr";
     color: rgb(0, 0, 0) !important;
     text-decoration: underline;
     line-height: 1.2;
     text-align: center;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
 }
 
 span.glyphicon{
@@ -462,7 +466,6 @@ footer{
     font-family: "HelveticaNeueCyr";
     color: rgb(0, 0, 0);
     line-height: 1.2;
-    margin-top: 30px;
 }
 
 .map-contact{
@@ -730,7 +733,7 @@ p.center-text-result{
         left: 0;
         background: rgba(0,0,0,0.3);
         color:white;
-    font-size: 22px;
+        font-size: 22px;
     }
     .author{
         margin-top: 0;
@@ -739,10 +742,10 @@ p.center-text-result{
         width: 100%;
         height: 100%;
     }
-	.telephone{
-   		 padding-top: 30px;
-    	text-align: center;
-	}
+    .telephone{
+        padding-top: 30px;
+        text-align: center;
+    }
     .text-rec{
         padding-left: 0;
         padding-right: 0;
@@ -750,13 +753,13 @@ p.center-text-result{
         display: none;
     }
     .link-rec{
-            font-size: 8px;
+        font-size: 8px;
     }
     .head-rec{
-       font-size: 6px;
-    padding-left: 0;
-    padding-right: 0;
-    white-space: pre-line;
+        font-size: 6px;
+        padding-left: 0;
+        padding-right: 0;
+        white-space: pre-line;
     }
     .sub-nav li, .sub-nav{
         display: block !important;
@@ -765,12 +768,12 @@ p.center-text-result{
         padding-top: 8%;
     }
     .recomendation-block{
-           min-height: 100px;
-   				 height: 315px;
+        min-height: 100px;
+        height: 315px;
     }
 
     .img-recom-slider{
-            min-height: 184px !important;
+        min-height: 184px !important;
     }
 
 }
