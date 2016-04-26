@@ -199,5 +199,7 @@
 	}
 
 </script>
+<?php the_field('google',8)?>
+<?php the_field('yandex',8)?>
 </body>
 </html>
